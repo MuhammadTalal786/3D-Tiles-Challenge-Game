@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09549af41255a3d46b8b500a63f93e23, type: 3}
+  m_Name: Lighting_Profile_Test1
+  m_EditorClassIdentifier: 
+  mainCameraName: Main Camera
+  volumeProfile: {fileID: 11400000, guid: 0959a853e48a8a54383d412c0ede01cd, type: 2}
+  objectName: LightingProfile
+  snowAlbedo: {fileID: 0}
+  snowNormal: {fileID: 0}
+  snowIntensity: 0
+  lightingMode: 3
+  bakedResolution: 40
+  lightSettings: 3
+  colorSpace: 0
+  ambientLight: 0
+  skyAmbientMode: 1
+  skyCube: {fileID: 8900000, guid: 17ebd1feb4fb2c649915dc44cf8f684a, type: 3}
+  skyExposure: 13.4
+  hdrRotation: 0
+  skyTint: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
+  groundColor: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+  tickness: 0.66
+  gradientTop: {r: 0, g: 0, b: 1, a: 1}
+  gradientMiddle: {r: 0.24964403, g: 0.655718, b: 0.9622642, a: 1}
+  gradientBottom: {r: 1, g: 1, b: 1, a: 1}
+  gradientDiffusion: 0.96
+  sunColor: {r: 1, g: 0.90374064, b: 0.8160377, a: 1}
+  sunIntensity: 30000
+  indirectIntensity: 1
+  baseHeight: 7.1
+  fogAttenDistance: 80
+  maxHeight: 46
+  maxDistance: 2225
+  fogTint: {r: 1, g: 1, b: 1, a: 0}
+  fogColorMode: 1
+  fogVolumetric: 0
+  volumetricColor: {r: 1, g: 1, b: 1, a: 1}
+  vAnistropic: 0
+  bIntensity: 0.521
+  bThreshould: 1.192
+  bColor: {r: 1, g: 1, b: 1, a: 1}
+  dirtTexture: {fileID: 2800000, guid: 5a0b813064c28024bb6fc536a9a45d39, type: 3}
+  dirtIntensity: 0
+  mobileOptimizedBloom: 0
+  bRotation: 0
+  indirectDiffuse: 3
+  indirectSpecular: 1
+  probeIntensity: 1
+  microEnabled: 0
+  microOpacity: 1
+  aoType: 2
+  aoRadius: 0
+  aoIntensity: 0.83
+  temporal: 0
+  directStrenth: 1
+  aoQuality: 0
+  aoTemporal: 0
+  ghostReducing: 0
+  lightProbesMode: 0
+  automaticLightmap: 0
+  dofFocusDistance: 6.5
+  dofQuality: 2
+  dofMode: 1
+  lb_exposureMode: 1
+  compensation: 2.34
+  compensationFixed: 0
+  fixedExposure: 11.8
+  exposureIntensity: 0
+  contrastValue: 0.279
+  temp: 0
+  colorMode: 0
+  saturation: 0
+  gamma: -0.16
+  colorGamma: {r: 0, g: 0, b: 0, a: 1}
+  colorLift: {r: 0, g: 0, b: 0, a: 1}
+  lut: {fileID: 0}
+  vignetteIntensity: 0.235
+  CA_Intensity: 0.126
+  minSmoothness: 1
+  edgeDistance: 0
+  ssrReflectSky: 1
+  ssrQUality: 2
+  eyeKeyValue1: -1
+  eyeKeyValue2: 14
+  meteringMode: 2
+  aaMode: 0
+  CascadeCount: 4
+  distance: 728
+  split1: 0.01
+  split2: 0.044
+  split3: 0.154
+  blurIntensity: 10
+  blurMaxVelocity: 100
+  blurQuality: 2
+  ssgiQuality: 1
+  Ambient_Enabled: 1
+  Scene_Enabled: 1
+  Sun_Enabled: 1
+  VL_Enabled: 0
+  Fog_Enabled: 0
+  AutoFocus_Enabled: 0
+  DOF_Enabled: 0
+  Bloom_Enabled: 0
+  AA_Enabled: 1
+  AO_Enabled: 0
+  MotionBlur_Enabled: 0
+  Vignette_Enabled: 1
+  Chromattic_Enabled: 0
+  SSR_Enabled: 1
+  HD_Enabled: 1
+  Micro_Enabled: 0
+  SSGI_Enabled: 0
+  ambientState: 0
+  ssgiState: 0
+  sunState: 0
+  lightSettingsState: 0
+  cameraState: 1
+  profileState: 0
+  buildState: 1
+  fogState: 0
+  dofState: 0
+  autoFocusState: 0
+  colorState: 1
+  bloomState: 0
+  aaState: 0
+  aoState: 0
+  motionBlurState: 0
+  vignetteState: 1
+  chromatticState: 0
+  ssrState: 0
+  hdState: 0
+  MicroState: 0
+  OptionsState: 1
+  LightingBoxState: 1
+  snowState: 0
