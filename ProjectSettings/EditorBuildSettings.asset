@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Main menu.unity
+    guid: 41dc88d2fe688fa4a97d15883bd0fc54
+  - enabled: 1
+    path: Assets/GabrielBissonnette/Primo - Main Menu Pack/Scenes/Empty.unity
+    guid: b6450284737785746a4537b6b758138e
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint elephant.unity
+    guid: a70b172dbec88294e964fef82c894762
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint lion.unity
+    guid: 75370829533275d45abdd8b60bc8d277
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint wolf.unity
+    guid: db0176b64d845eb4eb2193b53e31d3a0
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint zebra.unity
+    guid: 3b6e3f4c97141744192c599a59326811
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint car bike.unity
+    guid: a96c0e488b743ed4c99513c8efbfb5ae
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint bike.unity
+    guid: a8c7918e32d6dce48b9e044f739996d1
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint bike2.unity
+    guid: 88ef6d162b042d9499e587c67b503f6f
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint car.unity
+    guid: 1a2225d94af060b4e8ef6bb940c0be52
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint cat.unity
+    guid: a4719a315af1c0541a71520bd6f3e1c9
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint dog.unity
+    guid: 79aec9f13af217e47b14f843194931df
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint nature.unity
+    guid: 41b38e058c7c83c4d9de42f2738315c1
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint owl.unity
+    guid: f975471c36601a94abf2daf4e3a07a30
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint parrot.unity
+    guid: ca455bb4bdf6b1647ad91e19b0668911
+  - enabled: 1
+    path: Assets/Scenes/level 1 hint tiger.unity
+    guid: 7fa8a3158fa8d5a429bc2bac0fd0d661
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 4181e112fbda0ff408cf1c1d062cbc9d
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 1.unity
+    guid: 03d9d594bc89ebc4093c628dde1d2661
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 2.unity
+    guid: 65fe638d03c593243ab8eaebae51bafd
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 3.unity
+    guid: 5427ddfdac85f7340b5b33685031e4e0
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 4.unity
+    guid: 52c7b68e1fd5d7d408a17f94905408e4
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 5.unity
+    guid: 72a8e0b4beee6434d9dfb2c270c976e1
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 6.unity
+    guid: 63026febbff8db545a1b7f91c445507d
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 7.unity
+    guid: 18333d755ff110745a4f577bcc067aae
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 8.unity
+    guid: 6e3133977ede9f64eb0bb8e929864e49
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 9.unity
+    guid: 403e5cb4e9476344ea754c3045cc05c7
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 10.unity
+    guid: d2b9f5ca3add2064fa1bac253e2ab42c
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 11.unity
+    guid: cc4a7424924e5f14a8a16e9842c13996
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 12.unity
+    guid: 8a79512f03185454f8d16e481598e8de
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 13.unity
+    guid: 8c8b2f00210afc642955d1ca77ae6f45
+  - enabled: 1
+    path: Assets/Scenes/level 2 hint 14.unity
+    guid: 4e81d45ff3f554d46a5e847c9f6aa842
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 9ecda70215a2a414d895167064e71267
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 1.unity
+    guid: d849d4c39f704d946b75454a4f76bd26
+  - enabled: 1
+    path: Assets/Scenes/MultiplayerScene.unity
+    guid: 704c307dafdbb134ebbf55488c1f7c96
+  - enabled: 1
+    path: Assets/Scenes/MultiplayerLevel.unity
+    guid: 911e93ea934aaeb4fa9409d10aa2d926
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 2.unity
+    guid: e63c374ccf4c03549a5eed8e855bb0cb
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 3.unity
+    guid: bc5297085b3b6d54eba70218a588970b
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 4.unity
+    guid: c22531050a7bd35448852c6bf84cc7f9
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 5.unity
+    guid: 240eec6232b5a1c4ba2f56e59c318c36
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 6.unity
+    guid: 1b35c780a02ea3941aa0e10d9b9a297c
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 7.unity
+    guid: 499f0e24383d26145960ec7064995648
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 8.unity
+    guid: d0b1d8c23b2029348b3db209dea0d91d
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 9.unity
+    guid: 01093022757738947b83c564224f3483
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 10.unity
+    guid: 0aeb0d6a097175b49a0dde640a55852d
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 11.unity
+    guid: ae243cdcab9949d4fab6b4db5b55e0fa
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 12.unity
+    guid: 0e24506c713a7eb41924b934d0382554
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 13.unity
+    guid: 333f55e3b76925d4d8a4ae4c41492730
+  - enabled: 1
+    path: Assets/Scenes/level 3 hint 14.unity
+    guid: 48853ba265f7d18498f1dddb88f642ac
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: e87b346c5fa3e7846bdb56b705c3b7f1
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 2926c20593b8ac94d8b920033dc79d2f, type: 2}
