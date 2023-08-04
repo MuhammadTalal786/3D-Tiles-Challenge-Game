@@ -50,7 +50,7 @@ public class PlayerLocomotion : MonoBehaviour
         if (playerManager.isInteracting) return;
         if (isJumpLag) return;
         HandleMovement();
-        HandleRotation();
+       // HandleRotation();
     }
 
     public void HandleJumping()
@@ -141,5 +141,13 @@ public class PlayerLocomotion : MonoBehaviour
         {
             isGrounded = false;
         }
+    }
+    public void HandleCameraRotation(float cameraXInput, float cameraYInput)
+    {
+        // Rotate the camera around the player based on input
+        Vector3 cameraRotation = cameraObject.rotation.eulerAngles;
+        cameraRotation.x -= cameraYInput;
+        cameraRotation.y += cameraXInput;
+        cameraObject.rotation = Quaternion.Euler(cameraRotation);
     }
 }

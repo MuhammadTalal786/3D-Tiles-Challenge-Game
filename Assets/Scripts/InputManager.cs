@@ -15,7 +15,7 @@ public class InputManager : MonoBehaviour
     public float cameraXInput;
     public float cameraYInput;
 
-    public  float verticalInput;
+    public float verticalInput;
     public float horizontalInput;
 
     private void Awake()
@@ -33,6 +33,7 @@ public class InputManager : MonoBehaviour
     public void HandleAllInputs()
     {
         HandleMovement();
+        HandleCameraRotation();
         HandleJumpingInput();
     }
 
@@ -42,12 +43,11 @@ public class InputManager : MonoBehaviour
         horizontalInput = joystick.Horizontal;
         float moveAmount = Mathf.Clamp01(Mathf.Abs(horizontalInput) + Mathf.Abs(verticalInput));
         animatorManager.UpdateAnimatorValues(0, moveAmount);
-		playerLocomotion.HandleRotation();
     }
 
-    private void HandleLookAroundInput()
+    private void HandleCameraRotation()
     {
-        // Check for touch input and rotate the player based on the touch delta position
+        // Check for touch input and rotate the camera based on the touch delta position
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -55,7 +55,8 @@ public class InputManager : MonoBehaviour
             {
                 cameraXInput = touch.deltaPosition.x * touchSensitivity;
                 cameraYInput = touch.deltaPosition.y * touchSensitivity;
-                playerLocomotion.HandleRotation(cameraXInput, cameraYInput);
+                // Pass the camera rotation inputs to the PlayerLocomotion script
+                playerLocomotion.HandleCameraRotation(cameraXInput, cameraYInput);
             }
         }
     }
