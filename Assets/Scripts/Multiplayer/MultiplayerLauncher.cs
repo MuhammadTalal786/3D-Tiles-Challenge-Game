@@ -10,6 +10,7 @@ using Photon.Realtime;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 using System.Linq;
 using System;
+using UnityEngine.SceneManagement;
 
 public class MultiplayerLauncher : MonoBehaviourPunCallbacks
 {
@@ -408,7 +409,10 @@ public class MultiplayerLauncher : MonoBehaviourPunCallbacks
         PasswordPanel.SetActive(false);
     }
 
-
+    public void Back()
+	{
+        SceneManager.LoadScene("Empty");
+	}
 
    
 

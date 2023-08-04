@@ -109,7 +109,7 @@ public class MainMenuManager : MonoBehaviour
     private void SetStartUI()
     {
         //fadeAnimator.SetTrigger("FadeIn");
-        homePanel.SetActive(true);
+        homePanel.SetActive(true);      
         settingsPanel.SetActive(false);
     }
 

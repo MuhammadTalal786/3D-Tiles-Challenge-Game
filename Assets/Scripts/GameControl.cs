@@ -25,9 +25,7 @@ public class GameControl : MonoBehaviour
 			animal[2].rotation.z == 0 &&
 			animal[3].rotation.z == 0 &&
 			animal[4].rotation.z == 0 &&
-			animal[5].rotation.z == 0 &&
-			animal[6].rotation.z == 0 &&
-			animal[7].rotation.z == 0)
+			animal[5].rotation.z == 0)
 		{
 			youWin = true;
 			winText.SetActive(true);

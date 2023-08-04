@@ -1,82 +1,70 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class InputManager : MonoBehaviour
 {
+    public FixedJoystick joystick;
+    public float touchSensitivity = 0.1f;
+    private AnimatorManager animatorManager;
+    private PlayerLocomotion playerLocomotion;
+    private GameManagement gameManagement;
 
-	private PlayerControls playerControls;
-	private AnimatorManager animatorManager;
-	private PlayerLocomotion playerLocomotion;
-	private GameManagement gameManagement;
-	
+    private Vector2 movementInput;
+    private Vector2 cameraInput;
 
-	private Vector2 movementInput;
-	private Vector2 cameraInput;
-	
+    public float cameraXInput;
+    public float cameraYInput;
 
-	public float cameraXInput;
-	public float cameraYInput;
+    public  float verticalInput;
+    public float horizontalInput;
 
-	public float verticalInput;
-	public float horizontalInput;
+    private void Awake()
+    {
+        animatorManager = GetComponent<AnimatorManager>();
+        playerLocomotion = GetComponent<PlayerLocomotion>();
+        gameManagement = GetComponent<GameManagement>();
+    }
 
+    private void Update()
+    {
+        HandleAllInputs();
+    }
 
-	
-	private float moveAmount;
+    public void HandleAllInputs()
+    {
+        HandleMovement();
+        HandleJumpingInput();
+    }
 
-	public bool jumpInput;
+    private void HandleMovement()
+    {
+        verticalInput = joystick.Vertical;
+        horizontalInput = joystick.Horizontal;
+        float moveAmount = Mathf.Clamp01(Mathf.Abs(horizontalInput) + Mathf.Abs(verticalInput));
+        animatorManager.UpdateAnimatorValues(0, moveAmount);
+		playerLocomotion.HandleRotation();
+    }
 
-	private void Awake()
-	{
-		animatorManager = GetComponent<AnimatorManager>();
-		playerLocomotion = GetComponent<PlayerLocomotion>();
-		gameManagement = GetComponent<GameManagement>();
-	}
+    private void HandleLookAroundInput()
+    {
+        // Check for touch input and rotate the player based on the touch delta position
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Moved)
+            {
+                cameraXInput = touch.deltaPosition.x * touchSensitivity;
+                cameraYInput = touch.deltaPosition.y * touchSensitivity;
+                playerLocomotion.HandleRotation(cameraXInput, cameraYInput);
+            }
+        }
+    }
 
-	private void OnEnable()
-	{
-		if (playerControls == null)
-		{
-			playerControls = new PlayerControls();
-			playerControls.PlayerMovement.Movement.performed += i => movementInput = i.ReadValue<Vector2>();
-			playerControls.PlayerMovement.Camera.performed += i => cameraInput = i.ReadValue<Vector2>();
-			playerControls.PlayerActions.Jump.performed += i => jumpInput = true;
-		}
-		playerControls.Enable();
-	}
-
-	private void OnDisable()
-	{
-		playerControls.Disable();
-	}
-
-	public void HandleAllInputs()
-	{
-		HandleMovement();
-		HandleJumpingInput();
-	}
-	
-	private void HandleMovement()
-	{
-
-		verticalInput = movementInput.y;
-		horizontalInput = movementInput.x;
-		cameraXInput = cameraInput.x;
-		cameraYInput = cameraInput.y;
-		moveAmount = Mathf.Clamp01(Mathf.Abs(horizontalInput) + Mathf.Abs(verticalInput));
-		animatorManager.UpdateAnimatorValues(0, moveAmount);
-	}
-
-	private void HandleJumpingInput()
-	{
-		if (jumpInput && !playerLocomotion.isJumping)
-		{
-			jumpInput = false;
-			playerLocomotion.HandleJumping();
-			
-		}
-	}
-	
-	
+    private void HandleJumpingInput()
+    {
+        if (Input.GetButtonDown("Jump") && !playerLocomotion.isJumping)
+        {
+            playerLocomotion.HandleJumping();
+        }
+    }
 }

@@ -12,6 +12,6 @@ public class levelcomp : MonoBehaviour
     {
         if (other.tag == "levelcomplete")
             Man_Full.SetActive(false);
-        LevelComplete.SetActive(true);
+            LevelComplete.SetActive(true);
     }
 }

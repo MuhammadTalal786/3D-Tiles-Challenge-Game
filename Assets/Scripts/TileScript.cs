@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class TileScript : MonoBehaviour
 {
     public GameObject Button1;
@@ -19,10 +18,14 @@ public class TileScript : MonoBehaviour
     public GameObject Button13;
     public GameObject Button14;
     public GameObject Button15;
-    private void OnCollisionEnter(Collision collision)
+
+    private Vector3 previousPosition;
+    private string previousScene;
+
+   private void OnCollisionEnter(Collision collision)
+{
+    if (collision.gameObject.CompareTag("Player"))
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
             Button1.SetActive(true);
             Button2.SetActive(false);
             Button3.SetActive(false);
@@ -39,19 +42,11 @@ public class TileScript : MonoBehaviour
             Button14.SetActive(false);
             Button15.SetActive(false);
         }
-        PlayerPrefs.SetString("Level 1", SceneManager.GetActiveScene().name);
-    }
- 
+}
+
     public void OnHintButtonPress()
     {
-        // Save the current scene and tile position
-        PlayerPrefs.SetString("Level 1", SceneManager.GetActiveScene().name);
-        PlayerPrefs.SetFloat("-0.06", transform.position.x);
-        PlayerPrefs.SetFloat("PlayerY", transform.position.y);
-        PlayerPrefs.SetFloat("0.18", transform.position.z);
-
         // Load the hint scene
         SceneManager.LoadScene("Level 1 hint elephant");
     }
 }
-

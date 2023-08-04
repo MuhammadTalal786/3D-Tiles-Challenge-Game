@@ -9,9 +9,15 @@ public class nextlevel : MonoBehaviour
 	{
 		SceneManager.LoadScene("Level 2");
 	}
+	
 	public void ChangeScene2()
 	{
 		SceneManager.LoadScene("Level 3");
+	}
+
+	public void ChangeScene3()
+	{
+		SceneManager.LoadScene("Level 4");
 	}
 }
   
