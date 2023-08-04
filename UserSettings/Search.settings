@@ -10,6 +10,9 @@ scopes = {
 	"last_search.7BEC51F9" = ""
 	"OpenInspectorPreview.7BEC51F9" = "0"
 	"currentGroup.7BEC51F9" = "asset"
+	"last_search.8788AF05" = "playercontr"
+	"OpenInspectorPreview.8788AF05" = "0"
+	"currentGroup.8788AF05" = "all"
 }
 providers = {
 	adb = {
@@ -54,6 +57,10 @@ providers = {
 	}
 }
 recentSearches = [
+	"p"
+	"c"
+	"pl"
+	"P"
 ]
 searchItemFavorites = [
 ]
